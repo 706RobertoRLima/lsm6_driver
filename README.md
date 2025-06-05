@@ -5,10 +5,10 @@ LSM6 IMU Driver Implementation &amp; Testing
 
 ### Driver library
 
-- Write a small, reusable **C / C++** library for an ST **LSM6** IMU (any recent variant).
-- The API must allow a user to
-    - initialize the device,
-    - read accelerometer and gyroscope data and return acceleration and angular velocity
+- Write a small, reusable **C / C++** library for an ST **LSM6** IMU (any recent variant).\
+- The API must allow a user to\
+    - initialize the device,\
+    - read accelerometer and gyroscope data and return acceleration and angular velocity\
 
 ### Unit tests with mocks
 
@@ -17,7 +17,7 @@ LSM6 IMU Driver Implementation &amp; Testing
 
 # Run commands
 
-make test  -> Compiles all source files, links them into an executable test_runner inside build/, and then runs it.
-make lib   -> Compiles only the main source file (lsm6.c) into an object file (lsm6.o) inside build/. Useful for building the library without running tests.
-make clean -> Deletes the entire build/ directory and all compiled files, allowing for a clean rebuild.
-make help  -> list of option
+make test  -> Compiles all source files, links them into an executable test_runner inside build/, and then runs it.\
+make lib   -> Compiles only the main source file (lsm6.c) into an object file (lsm6.o) inside build/. Useful for building the library without running tests.\
+make clean -> Deletes the entire build/ directory and all compiled files, allowing for a clean rebuild.\
+make help  -> list of option\n 
