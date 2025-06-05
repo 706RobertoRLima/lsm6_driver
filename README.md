@@ -9,6 +9,10 @@ LSM6 IMU Driver Implementation &amp; Testing
 - The API must allow a user to\
     - initialize the device,\
     - read accelerometer and gyroscope data and return acceleration and angular velocity\
+- Write a small, reusable **C / C++** library for an ST **LSM6** IMU (any recent variant).\
+- The API must allow a user to\
+    - initialize the device,\
+    - read accelerometer and gyroscope data and return acceleration and angular velocity\
 
 ### Unit tests with mocks
 
