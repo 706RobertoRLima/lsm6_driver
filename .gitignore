@@ -1,6 +1,2 @@
 # Ignore build output
 /build/
-
-# Ignore Unity test framework (assumed to be added externally)
-# If you maintain your own Unity source, remove this line
-/unity/
