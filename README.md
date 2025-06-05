@@ -3,7 +3,7 @@ LSM6 IMU Driver Implementation &amp; Testing
 
 # to clone the repository
 git clone --recurse-submodules https://github.com/706RobertoRLima/lsm6_driver.git
-
+git submodule update --init --recursive
 
 # Description
 
