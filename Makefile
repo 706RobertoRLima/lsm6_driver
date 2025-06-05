@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -I. -Iunity/src -Iapi -Isrc -Icfg -Iwrappers -Itest
+CFLAGS = -Wall -Wextra -I. -Iexternal/unity/src -Iapi -Isrc -Icfg -Iwrappers -Itest
 BUILD_DIR = build
 
 # Driver type (default: DEVELOPING)
@@ -11,7 +11,7 @@ CFLAGS += -DDRIVER_TYPE=$(DRIVER)
 SRC = src/lsm6.c
 WRAPPERS = wrappers/lsm6_mock.c
 TEST_SRC = test/ut_lsm6.c
-UNITY_SRC = unity/src/unity.c
+UNITY_SRC = external/unity/src/unity.c
 
 # Targets
 TARGET = $(BUILD_DIR)/test_runner
@@ -38,7 +38,7 @@ $(BUILD_DIR)/%.o: wrappers/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 $(BUILD_DIR)/%.o: test/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
-$(BUILD_DIR)/%.o: unity/src/%.c
+$(BUILD_DIR)/%.o: external/unity/src/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Ensure build/ exists
